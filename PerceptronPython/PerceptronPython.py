@@ -1,12 +1,12 @@
 
 import numpy as np
 
-entradas = np.array([[0,0], [0,1], [1,0], [1,1]]) # Here you put the input data
-saidas = np.array([0,0,0,1]) # This is the data you expect to output
-pesos = np.array([0.0, 0.0]) # Here are the data weights, you can set an initial value
-taxaAprendizagem = 0.1 # Here is the learning rate of the neuron, you can also change
+entradas = np.array([[0,0], [0,1], [1,0], [1,1]]) # Here you put the input data.
+saidas = np.array([0,0,0,1]) # This is the data you expect to output.
+pesos = np.array([0.0, 0.0]) # Here are the data weights, you can set an initial value.
+taxaAprendizagem = 0.1 # Here is the learning rate of the neuron, you can also change.
 
-def stepFunction(soma): # For the data output I chose, I defined the step function
+def stepFunction(soma): # For the data output I chose, I defined the step function.
     if (soma >=1):
         return 1
     return 0
